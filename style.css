@@ -1,10 +1,29 @@
 body {
-    background: #008080;
-    margin: 0;
-    padding: 0;
-    font-family: Courier New, monospace;
-    user-select: none;
-    font-weight: 300;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: Courier New, monospace;
+  text-align: center;
+  background-color: #008080;
+  color: white;
 }
+
+<style>
+  .image-links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px); /* Fixed size of 45px for each image */
+    gap: 30px; /* Adjust gap between images as desired */
+    text-align: center;
+}
+
+.image-links-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.image-links-container img {
+    width: 100%; /* Ensures images fill the grid cell without stretching */
+    height: auto;
+}
+
+.image-links-container p {
+    margin-top: 10px;
+}
+</style>
