@@ -15,7 +15,7 @@ body {
 
 .image-links-container a {
     text-decoration: none;
-    color: #c3c3c3;
+    background-color: #c3c3c3;
 }
 
 .image-links-container img {
