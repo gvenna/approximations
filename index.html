@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>approximations</title>
     <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <style>
+        .image-links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .image-links-container a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .image-links-container img {
+            width: 50px;
+            height: auto;
+        }
+
+        .image-links-container p {
+            margin-top: 50px;
+        }
+    </style>
 </head>
-    
 <body>
-    <header id="desktop">
-    </header>
-    
-    <a href="directory1.html" style="text-decoration: none; color: inherit;">
-    <div style="text-align: center;">
-        <img src="images/directory_closed-4.png" alt="Directory 1">
-        <p style="margin: 2px 0; color: white">Directory 1</p>
-    </div>
-</a>
-    
-    <a href="directory2.html" style="text-decoration: none; color: inherit;">
-    <div style="text-align: center;">
-        <img src="images/directory_closed-4.png" alt="Directory 2">
-        <p style="margin: 2px 0; color: white">Directory 2</p>
-    </div>
-</a>
-    
-</body>
-</html>
+
+   <div class="image-links-container">
+    <a href="page1.html">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Folder 1">
+    </a>
+    <a href="page2.html">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Folder 2">
+    </a>
+    <a href="page3.html">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png">
+    </a>
+    <!-- Repeat for all 30 images -->
+</div>
+      
+    </html>
