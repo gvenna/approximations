@@ -1,4 +1,13 @@
-body {
-    background-color: #ffffff;
-    font-family: Helvetica, sans-serif;
-  }
+.folder {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px; /* Adjust the width if necessary */
+}
+
+.folder1 {
+    background-color: #c3c3c3; 
+}
+
