@@ -4,7 +4,7 @@ body {
 }
 
 a.draggable {
-    display: inline-block;
+    display: block;
     position: absolute;  /* Allows for absolute positioning on the page */
     cursor: pointer;    /* Change cursor to show it's draggable */
     text-align: center;
