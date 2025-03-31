@@ -1,10 +1,9 @@
 body {
   font-family: Courier New, monospace;
-  text-align: center;
   background-color: #c3c3c3;
-  color: white;
 }
 
 p {
   color: black
+  text-align: center;
 }
