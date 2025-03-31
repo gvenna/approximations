@@ -1,9 +1,9 @@
 body {
   font-family: Courier New, monospace;
   background-color: #c3c3c3;
+  text-align: center;
 }
 
 p {
   color: black
-  text-align: center;
 }
