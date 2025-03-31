@@ -10,19 +10,23 @@
     <style>
         .image-links-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(50px);
+            grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
             gap: 30px;
             text-align: center;
         }
 
         .image-links-container a {
             text-decoration: none;
-            color: none;
+            color: white;
         }
 
         .image-links-container img {
-            width: 50px;
+            width: 45px;
             height: auto;
+        }
+
+        .image-links-container p {
+            margin-top: 5px; /* Space between image and text */
         }
 
     </style>
@@ -33,10 +37,12 @@
      
     <a href="directory1.html">
         <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Folder 1">
+        <p>Folder 1</p>
     </a>
     
     <a href="directory2.html">
         <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Folder 2">
+        <p>Folder 2</p>
     </a>
      
     <!-- Repeat for all 30 images -->
