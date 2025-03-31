@@ -1,1 +1,6 @@
-
+body {
+  font-family: Courier New, monospace;
+  text-align: center;
+  background-color: #008080;
+  color: white;
+}
