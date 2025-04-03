@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>approximations</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
     </head>
     
     <style>
@@ -45,6 +46,10 @@
         <p>or</p>
     </a>
 
+     <a href="#" id="open-popup">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Help Book">
+    </a>
+
      <a href="https://poets.org/poem/blueberries">
         <img src="images/msie1-2.png" alt="Internet Explorer Icon">
         <p>04_01</p>
@@ -54,6 +59,30 @@
         <img src="images/file_windows-2.png" alt="Notepad Icon">
         <p>04_02</p>
     </a>
+
+     <!-- Popup Window (Uses 98.css) -->
+    <div class="window" id="popup">
+        <div class="title-bar">
+            <div class="title-bar-text">Help</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" id="close-popup"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>Happy National Poetry Month!</p>
+          <p> I'm using it as an excuse to experiment with HTML and CSS by sharing poems I’ve read and liked..<p/>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("open-popup").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "block";
+        });
+
+        document.getElementById("close-popup").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "none";
+        });
+    </script>
      
     <!-- Repeat for all 30 images -->
 </div>
