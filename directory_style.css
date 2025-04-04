@@ -7,3 +7,10 @@ body {
 p {
   color: black
 }
+
+.responsive-img {
+    max-width: 90%;     /* Shrinks image to fit smaller screens */
+    height: auto;       /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;     /* Center the image */
+}
