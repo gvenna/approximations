@@ -8,9 +8,21 @@ p {
   color: black
 }
 
+.image-with-text {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .responsive-img {
-    max-width: 90%;     /* Shrinks image to fit smaller screens */
-    height: auto;       /* Maintains aspect ratio */
-    display: block;
-    margin: 0 auto;     /* Center the image */
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  width: 100%;
+  font-size: 1rem; /* Adjust as needed */
+  color: white;    /* or whatever you want */
+  margin-top: 0.5rem;
 }
