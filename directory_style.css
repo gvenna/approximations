@@ -7,3 +7,8 @@ body {
 p {
   color: black
 }
+
+img {
+  width: auto;
+  height: auto;
+}
