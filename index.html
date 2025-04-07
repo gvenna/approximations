@@ -47,7 +47,7 @@
         <p>or</p>
     </a>
 
-     <a href="#" id="open-popup">
+     <a href="#" id="open-popup-1">
         <img src="images/help_book_cool-4.png" alt="Help Book">
         <p>Help</p>
     </a>
@@ -82,13 +82,13 @@
         <p>04_06</p>
     </a>
 
-     <a href="#" id="open-popup">
+     <a href="#" id="open-popup-2">
         <img src="https://win98icons.alexmeub.com/icons/png/directory_fonts-0.png" alt="Font Folder Icon">
         <p>04_07</p>
     </a>
 
      <!-- Popup Window (Uses 98.css) -->
-     <div class="window" id="popup">
+     <div class="window" id="popup-1">
         <div class="title-bar">
             <div class="title-bar-text">Help</div>
             <div class="title-bar-controls">
@@ -101,7 +101,7 @@
         </div>
     </div>
      
-    <div class="window" id="popup">
+    <div class="window" id="popup-2">
         <div class="title-bar">
             <div class="title-bar-text">04_07</div>
             <div class="title-bar-controls">
@@ -109,19 +109,19 @@
             </div>
         </div>
         <div class="window-body">
-          <a href="https://www.berfrois.com/2011/12/in-a-library-emily-dickinson/" id="open-popup">
+          <a href="https://www.berfrois.com/2011/12/in-a-library-emily-dickinson/">
                   <img src="https://win98icons.alexmeub.com/icons/png/message_file-0.png" alt="Message File Icon">
                   <p>Poem</p>
               </a>
           
-          <a href="https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek" id="open-popup">
+          <a href="https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek">
                   <img src="https://win98icons.alexmeub.com/icons/png/message_file-0.png" alt="Message File Icon">
                   <p>ALA</p>
               </a>
           
-          <a href="https://youtu.be/SRr0ukTQr8Y?si=1OLB3XHwXJ6CFmIj" id="open-popup">
+          <a href="https://youtu.be/SRr0ukTQr8Y?si=1OLB3XHwXJ6CFmIj">
                   <img src="https://win98icons.alexmeub.com/icons/png/media_player_file-0.png" alt="Media Player File Icon">
-                  <p>;)</p>
+                  <p>:-)</p>
               </a>
         </div>
     </div>
@@ -140,15 +140,26 @@
     </style>
 
      <!-- Popup Window Script -->
-    <script>
-        document.getElementById("open-popup").addEventListener("click", function() {
-            document.getElementById("popup").style.display = "block";
-        });
+<script>
+    // First popup
+    document.getElementById("open-popup-1").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("popup-1").style.display = "block";
+    });
+    document.getElementById("close-popup-1").addEventListener("click", function () {
+        document.getElementById("popup-1").style.display = "none";
+    });
 
-        document.getElementById("close-popup").addEventListener("click", function() {
-            document.getElementById("popup").style.display = "none";
-        });
-    </script>
+    // Second popup
+    document.getElementById("open-popup-2").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("popup-2").style.display = "block";
+    });
+    document.getElementById("close-popup-2").addEventListener("click", function () {
+        document.getElementById("popup-2").style.display = "none";
+    });
+</script>
+
      
     
 </div>
