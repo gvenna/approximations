@@ -1,37 +1,13 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>approximations</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>approximations</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <script src="scripts.js" defer></script>
     </head>
-    
-    <style>
-        .image-links-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
-            gap: 25px;
-            text-align: center;
-        }
-
-        .image-links-container a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .image-links-container img {
-            width: 45px;
-            height: auto;
-        }
-
-        .image-links-container p {
-            margin-top: 0px; /* Space between image and text */
-            font-size: 10px
-        }
-
-    </style>
 
 <body> 
   
@@ -47,12 +23,12 @@
         <p>or</p>
     </a>
 
+    <!-- Help Book Popup Window (Uses 98.css) -->
      <a href="#" id="open-popup-1">
         <img src="images/help_book_cool-4.png" alt="Help Book">
         <p>Help</p>
     </a>
 
-     <!-- Help Book Popup Window (Uses 98.css) -->
      <div class="window" id="popup-1">
         <div class="title-bar">
             <div class="title-bar-text">Help</div>
@@ -65,6 +41,7 @@
           <p> I'm using it as an excuse to play with HTML and CSS by sharing poems I’ve read and liked.<p/>
         </div>
     </div>
+    <!-- Help Book -->
 
      <a href="https://poets.org/poem/blueberries">
         <img src="images/msie1-2.png" alt="Internet Explorer Icon">
@@ -86,7 +63,7 @@
         <p>04_04</p>
     </a>
 
-     <a href="https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/129/">
+    <a href="https://www.folger.edu/explore/shakespeares-works/shakespeares-sonnets/read/129/">
         <img src="https://win98icons.alexmeub.com/icons/png/netshow_notransm-2.png" alt="Netshow Notransm Icon">
         <p>04_05</p>
     </a>
@@ -96,12 +73,12 @@
         <p>04_06</p>
     </a>
 
-     <a href="#" id="open-popup-2">
+    <!-- 04_07 Popup Window (Uses 98.css) -->
+    <a href="#" id="open-popup-2">
         <img src="https://win98icons.alexmeub.com/icons/png/directory_fonts-0.png" alt="Font Folder Icon">
         <p>04_07</p>
     </a>
  
-    <!-- 04_07 Popup Window (Uses 98.css) -->
     <div class="window" id="popup-2">
         <div class="title-bar">
             <div class="title-bar-text">04_07</div>
@@ -130,10 +107,9 @@
                   <img src="https://win98icons.alexmeub.com/icons/png/message_file-0.png" alt="Message File Icon">
                   <p>Digression</p>
               </a>
-
-          
         </div>
     </div>
+    <!-- 04_07 Popup Window -->
 
      <a href="https://www.theatlantic.com/past/docs/unbound/poetry/antholog/mazur/bonnets.htm" >
        <img src="https://win98icons.alexmeub.com/icons/png/file_blue_grad_paint-0.png" alt="Blue Grad Paint Icon">
@@ -205,47 +181,13 @@
         <p>04_20</p>
     </a>
 
-     <!-- 
+    <!-- 
     <a href="april21.html">
         <img src="https://win98icons.alexmeub.com/icons/png/application_hourglass_small-4.png" alt="Application Hourglass Icon">
         <p>04_21</p>
     </a>
     -->
-
-    <style>
-    #popup-1, #popup-2 {
-        display: none; /* Hide the popup initially */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-    }
-    </style>
-
-     <!-- Popup Window Script -->
-<script>
-    // First popup
-    document.getElementById("open-popup-1").addEventListener("click", function (event) {
-        event.preventDefault();
-        document.getElementById("popup-1").style.display = "block";
-    });
-    document.getElementById("close-popup-1").addEventListener("click", function () {
-        document.getElementById("popup-1").style.display = "none";
-    });
-
-    // Second popup
-    document.getElementById("open-popup-2").addEventListener("click", function (event) {
-        event.preventDefault();
-        document.getElementById("popup-2").style.display = "block";
-    });
-    document.getElementById("close-popup-2").addEventListener("click", function () {
-        document.getElementById("popup-2").style.display = "none";
-    });
-</script>
-
-     
     
 </div>
       
-    </html>
+</html>
