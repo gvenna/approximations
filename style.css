@@ -10,8 +10,8 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
   gap: 25px;
   text-align: center;
+  padding: 50px;
   min-height: calc(100vh - 30px);
-  padding-bottom: 50px;
   box-sizing: border-box;
 }
 
