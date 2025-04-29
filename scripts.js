@@ -31,24 +31,22 @@ closeBtn.addEventListener("click", function() {
     popup.style.display = "none";
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-    function updateClock() {
-      const now = new Date();
-      let hours = now.getHours();
-      let minutes = now.getMinutes();
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
   
-      const ampm = hours >= 12 ? 'PM' : 'AM';
-      hours = hours % 12;
-      hours = hours ? hours : 12; // 0 becomes 12
-      minutes = minutes < 10 ? '0' + minutes : minutes;
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 becomes 12
+    minutes = minutes < 10 ? '0' + minutes : minutes;
   
-      const timeString = `${hours}:${minutes} ${ampm}`;
-      const clockElement = document.getElementById('start-clock');
-      if (clockElement) {
+    const timeString = `${hours}:${minutes} ${ampm}`;
+    const clockElement = document.getElementById('start-clock');
+    if (clockElement) {
         clockElement.textContent = timeString;
-      }
     }
-  
-    setInterval(updateClock, 1000);
-    updateClock(); // Update immediately
-  });
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // Update immediately
