@@ -30,3 +30,22 @@ openBtn.addEventListener("click", function(event) {
 closeBtn.addEventListener("click", function() {
     popup.style.display = "none";
 });
+
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+
+    // Convert to 12-hour format
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // hour 0 should be 12
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    const timeString = `${hours}:${minutes} ${ampm}`;
+    document.getElementById('start-clock').textContent = timeString;
+  }
+
+  // Update every second
+  setInterval(updateClock, 1000);
+  updateClock(); // Run once immediately
