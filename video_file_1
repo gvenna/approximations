@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Video File 1</title>
+    </head>
+
+    <style>
+        .player {
+          /* width can be anything, this is just a suggestion */
+          width: 350px;
+        }
+      </style>
+      <div id="app"></div>
+</html>
