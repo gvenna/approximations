@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Video File 1</title>
+        <script src="scripts.js" defer></script>
     </head>
 
     <style>
