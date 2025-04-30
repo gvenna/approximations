@@ -1,17 +1,59 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import { PlayerContextGroup } from '@cassette/core';
+
+import { MediaPlayer } from '../../src';
+
+import videoPlaylist from './videoPlaylist';
+import audioPlaylist from './audioPlaylist';
+
+function loadSnapshot(key) {
+  let snapshot = localStorage.getItem(key);
+  if (snapshot) {
+    snapshot = JSON.parse(snapshot);
+  }
+  return snapshot;
+}
+const videoStateSnapshot = loadSnapshot('video-state-snapshot');
+const audioStateSnapshot = loadSnapshot('audio-state-snapshot');
+function saveSnapshot(snapshot, key) {
+  localStorage.setItem(key, JSON.stringify(snapshot));
+}
+function onVideoStateSnapshot(snapshot) {
+  saveSnapshot(snapshot, 'video-state-snapshot');
+}
+function onAudioStateSnapshot(snapshot) {
+  saveSnapshot(snapshot, 'audio-state-snapshot');
+}
+
+ReactDOM.render(
+  <PlayerContextGroup>
+    <div className="players-container">
+      <MediaPlayer
+        playlist={videoPlaylist}
+        showVideo
+        fullscreenEnabled
+        initialStateSnapshot={videoStateSnapshot}
+        onStateSnapshot={onVideoStateSnapshot}
+        className="player"
+      />
+      <MediaPlayer
+        playlist={audioPlaylist}
+        initialStateSnapshot={audioStateSnapshot}
+        onStateSnapshot={onAudioStateSnapshot}
+        className="player"
+      />
+    </div>
+  </PlayerContextGroup>,
+  document.getElementById('app')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const exampleCode = document.getElementById('example-code').textContent;
+
+ReactDOM.render(
+  <pre>
+    <code>{exampleCode}</code>
+  </pre>,
+  document.getElementById('example-code-display')
+);
