@@ -30,7 +30,7 @@ body {
   font-size: 10px
 }
 
-#popup-1, #popup-2 {
+#popup-1, #popup-2, #popup-3 {
   display: none; /* Hide the popup initially */
   position: absolute;
   top: 50%;
