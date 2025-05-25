@@ -32,9 +32,9 @@ body {
 
 #popup-1, #popup-2, #popup-3 {
   display: none; /* Hide the popup initially */
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
