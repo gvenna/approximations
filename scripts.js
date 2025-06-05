@@ -17,13 +17,15 @@ document.getElementById("close-popup-2").addEventListener("click", function () {
 });
 
 // Third popup: Recycle Bin 
+/*
 document.getElementById("open-popup-3").addEventListener("click", function (event) {
     event.preventDefault();
     document.getElementById("popup-3").style.display = "block";
 });
 document.getElementById("close-popup-3").addEventListener("click", function () {
     document.getElementById("popup-3").style.display = "none";
-});
+}); 
+*/
 
 function updateClock() {
     const now = new Date();
